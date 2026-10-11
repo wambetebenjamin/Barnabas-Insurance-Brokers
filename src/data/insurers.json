@@ -1,0 +1,455 @@
+{
+  "version": "1.0.0",
+  "currency": "KES",
+  "updatedAt": "2025-10-01",
+  "maintainedBy": "The Barnabas Insurance Brokers broker team, through PUT /api/comparison with the ADMIN_TOKEN bearer token. Get a comparison row into this dataset by emailing the broker team at quotes@barnabasinsurancebrokers.co.ke. Do not quote a client from this file without confirming the rate with the insurer.",
+  "disclaimer": "Premiums shown are indicative monthly figures for the described profile only. They are not an offer of cover. The final premium is confirmed by the insurer after underwriting and may be higher or lower. Excess amounts and benefit limits vary by insurer, by scheme, and by the age and claims history of the insured. Cover is subject to the policy terms, conditions, and exclusions of the issuing insurer. Barnabas Insurance Brokers advises and places cover, the insurer pays claims.",
+  "profiles": {
+    "motor-insurance": "Private saloon car, sum insured KES 2,500,000, driver over 30, comprehensive cover, vehicle kept in Nairobi overnight.",
+    "health-and-medical": "Family cover, two adults aged 38 and 35, two children under 12, KES 5,000,000 inpatient limit, outpatient included, Nairobi hospital network.",
+    "life-insurance": "Term life, applicant aged 35, non smoker, KES 5,000,000 sum assured, 20 year term, accidental death rider included.",
+    "home-and-property": "Owner occupied maisonette in Kiambu, buildings sum insured KES 8,000,000, contents KES 1,500,000, mortgage lender interest noted.",
+    "business-insurance": "SME package for a Nairobi based distributor, 12 employees, stock KES 6,000,000, public liability KES 20,000,000, goods in transit within Kenya.",
+    "travel-insurance": "Single trip of 10 days, traveller aged 40, Schengen area, EUR 30,000 medical and repatriation cover, baggage KES 150,000."
+  },
+  "products": {
+    "motor-insurance": [
+      {
+        "insurer": "CIC Insurance Group",
+        "plan": "Motor Comprehensive Private",
+        "premiumFrom": 6900,
+        "premiumTo": 10900,
+        "cycle": "month",
+        "coverageLimit": "Own damage to market value KES 2,500,000, third party injury unlimited in practice, third party property KES 10,000,000",
+        "excess": "5 percent of each claim, minimum KES 25,000",
+        "benefits": [
+          "Free towing to the nearest approved garage",
+          "Excess protector available on request",
+          "Cooperative ownership structure keeps claim reserves locally held"
+        ],
+        "highlight": true
+      },
+      {
+        "insurer": "Directline Assurance",
+        "plan": "Motor Comprehensive",
+        "premiumFrom": 6500,
+        "premiumTo": 9800,
+        "cycle": "month",
+        "coverageLimit": "Own damage to market value, third party property KES 7,500,000",
+        "excess": "5 percent of each claim, minimum KES 25,000",
+        "benefits": [
+          "Lowest entry premium on most private saloons",
+          "Strong PSV and matatu experience",
+          "Fast rescue service within Nairobi"
+        ]
+      },
+      {
+        "insurer": "Jubilee Health and Jubilee Insurance",
+        "plan": "Motor Comprehensive Elite",
+        "premiumFrom": 7300,
+        "premiumTo": 11500,
+        "cycle": "month",
+        "coverageLimit": "Own damage to market value, political violence and terrorism cover included to KES 2,500,000",
+        "excess": "5 percent of each claim, minimum KES 25,000, nil excess for windscreen",
+        "benefits": [
+          "Political violence and terrorism included as standard",
+          "Windscreen and entertainment equipment extensions",
+          "Approved garage network across 30 counties"
+        ]
+      },
+      {
+        "insurer": "Britam General Insurance",
+        "plan": "Motor Comprehensive Plus",
+        "premiumFrom": 7100,
+        "premiumTo": 11200,
+        "cycle": "month",
+        "coverageLimit": "Own damage to market value, third party property KES 10,000,000, passenger liability KES 4,000,000",
+        "excess": "5 percent of each claim, minimum KES 25,000",
+        "benefits": [
+          "Passenger legal liability included up to KES 4,000,000",
+          "Medical expenses for occupants up to KES 100,000",
+          "Digital claim lodgement through the insurer app"
+        ]
+      },
+      {
+        "insurer": "APA Insurance",
+        "plan": "Motor Comprehensive",
+        "premiumFrom": 7000,
+        "premiumTo": 11000,
+        "cycle": "month",
+        "coverageLimit": "Own damage to market value, third party property KES 10,000,000, driver personal accident KES 500,000",
+        "excess": "5 percent of each claim, minimum KES 25,000",
+        "benefits": [
+          "Driver personal accident benefit included",
+          "Excess buy back on selected motor classes",
+          "Direct settlement with major dealer workshops"
+        ]
+      }
+    ],
+    "health-and-medical": [
+      {
+        "insurer": "CIC Insurance Group",
+        "plan": "Family Medical Cover",
+        "premiumFrom": 3500,
+        "premiumTo": 8200,
+        "cycle": "month",
+        "coverageLimit": "KES 5,000,000 inpatient, KES 200,000 outpatient, KES 250,000 maternity",
+        "excess": "No cash excess on inpatient within network, co payment of KES 500 per outpatient visit",
+        "benefits": [
+          "Wide county hospital network outside Nairobi",
+          "Chronic conditions covered after a 6 month waiting period",
+          "Group rates from five lives"
+        ],
+        "highlight": true
+      },
+      {
+        "insurer": "Britam Insurance",
+        "plan": "Afya Health Cover",
+        "premiumFrom": 3800,
+        "premiumTo": 8900,
+        "cycle": "month",
+        "coverageLimit": "KES 5,000,000 inpatient, KES 250,000 outpatient, KES 300,000 maternity",
+        "excess": "Nil on inpatient, KES 1,000 co payment on outpatient",
+        "benefits": [
+          "Smart card settlement across 600 partner facilities",
+          "Dental and optical limits from KES 50,000",
+          "Optional cover for parents and parents in law"
+        ]
+      },
+      {
+        "insurer": "AAR Insurance Kenya",
+        "plan": "AAR Health Plan",
+        "premiumFrom": 4500,
+        "premiumTo": 10200,
+        "cycle": "month",
+        "coverageLimit": "KES 5,000,000 inpatient, KES 300,000 outpatient, KES 350,000 maternity",
+        "excess": "Nil on inpatient, co payment varies by facility tier",
+        "benefits": [
+          "Own clinic and diagnostic network in Nairobi",
+          "Emergency road ambulance and air evacuation cover",
+          "Wellness and chronic disease management programme"
+        ]
+      },
+      {
+        "insurer": "Jubilee Health Insurance",
+        "plan": "Premier Family",
+        "premiumFrom": 4200,
+        "premiumTo": 9500,
+        "cycle": "month",
+        "coverageLimit": "KES 5,000,000 inpatient, KES 300,000 outpatient, KES 400,000 maternity",
+        "excess": "Nil on inpatient, co payment of KES 1,000 per outpatient visit",
+        "benefits": [
+          "Repatriation treatment abroad up to the limit",
+          "Full pre-existing condition review within 24 months",
+          "Online member portal and claim tracking"
+        ]
+      },
+      {
+        "insurer": "APA Insurance",
+        "plan": "Hospitalisation and Outpatient",
+        "premiumFrom": 3650,
+        "premiumTo": 8500,
+        "cycle": "month",
+        "coverageLimit": "KES 5,000,000 inpatient, KES 200,000 outpatient, KES 250,000 maternity",
+        "excess": "Nil on inpatient within network, co payment on outpatient",
+        "benefits": [
+          "Competitive rates for young families",
+          "Psychiatric and counselling benefit included",
+          "No age loading above the standard bands"
+        ]
+      }
+    ],
+    "life-insurance": [
+      {
+        "insurer": "Britam Life Assurance",
+        "plan": "Term Life with Accidental Death Rider",
+        "premiumFrom": 1550,
+        "premiumTo": 4200,
+        "cycle": "month",
+        "coverageLimit": "Sum assured KES 5,000,000, accidental death double indemnity, last expense KES 200,000",
+        "excess": "Not applicable, medical underwriting applies",
+        "benefits": [
+          "Direct payment to nominated beneficiaries avoids probate",
+          "Premium waiver on permanent disability",
+          "Optional critical illness rider"
+        ],
+        "highlight": true
+      },
+      {
+        "insurer": "ICEA LION Life Assurance",
+        "plan": "Term Assurance Plus",
+        "premiumFrom": 1650,
+        "premiumTo": 4400,
+        "cycle": "month",
+        "coverageLimit": "Sum assured KES 5,000,000, terminal illness acceleration included",
+        "excess": "Not applicable",
+        "benefits": [
+          "Education benefit paying staged amounts for school fees",
+          "Mortgage protection variant tracks the loan balance",
+          "Strong claims settlement record"
+        ]
+      },
+      {
+        "insurer": "Old Mutual Life Assurance",
+        "plan": "Whole Life Plan",
+        "premiumFrom": 3800,
+        "premiumTo": 9500,
+        "cycle": "month",
+        "coverageLimit": "Sum assured from KES 5,000,000, builds a surrender value over time",
+        "excess": "Not applicable",
+        "benefits": [
+          "Lifetime cover with a savings component",
+          "Policy loan available after the qualifying period",
+          "Critical illness and disability riders"
+        ]
+      },
+      {
+        "insurer": "Sanlam Life Insurance Kenya",
+        "plan": "Term Life",
+        "premiumFrom": 1700,
+        "premiumTo": 4600,
+        "cycle": "month",
+        "coverageLimit": "Sum assured KES 5,000,000, funeral benefit KES 250,000",
+        "excess": "Not applicable",
+        "benefits": [
+          "Entry ages up to 65 without medicals on lower sums",
+          "Group life and group last expense for employers",
+          "Premium discount for policyholders insuring a spouse"
+        ]
+      },
+      {
+        "insurer": "CIC Insurance Group",
+        "plan": "Group and Individual Life",
+        "premiumFrom": 1500,
+        "premiumTo": 4100,
+        "cycle": "month",
+        "coverageLimit": "Sum assured KES 5,000,000, group last expense KES 300,000 per employee",
+        "excess": "Not applicable",
+        "benefits": [
+          "Group life from five employees with no individual medicals",
+          "Education plan variant with fixed maturity payout",
+          "Competitive rates for younger lives"
+        ]
+      }
+    ],
+    "home-and-property": [
+      {
+        "insurer": "Jubilee Insurance",
+        "plan": "Home Shield Buildings and Contents",
+        "premiumFrom": 2100,
+        "premiumTo": 6200,
+        "cycle": "month",
+        "coverageLimit": "Buildings KES 8,000,000, contents KES 1,500,000, alternative accommodation KES 300,000",
+        "excess": "KES 10,000 on each contents claim, KES 25,000 on buildings claims",
+        "benefits": [
+          "Mortgage lender interest noted as standard",
+          "All risks cover for items carried outside the home",
+          "Loss of rent for landlords up to 12 months"
+        ],
+        "highlight": true
+      },
+      {
+        "insurer": "Britam General Insurance",
+        "plan": "Homeowner Protection",
+        "premiumFrom": 2200,
+        "premiumTo": 6400,
+        "cycle": "month",
+        "coverageLimit": "Buildings KES 8,000,000, contents KES 1,500,000, public liability KES 5,000,000",
+        "excess": "KES 15,000 on each claim",
+        "benefits": [
+          "Political violence and terrorism extension available",
+          "Contents on agreed value, no depreciation",
+          "Automatic cover for newly acquired household items for 30 days"
+        ]
+      },
+      {
+        "insurer": "CIC Insurance Group",
+        "plan": "Domestic Package",
+        "premiumFrom": 2000,
+        "premiumTo": 5900,
+        "cycle": "month",
+        "coverageLimit": "Buildings KES 8,000,000, contents KES 1,500,000, rent loss KES 250,000",
+        "excess": "KES 10,000 on contents, KES 20,000 on buildings",
+        "benefits": [
+          "Burst pipe and water damage included",
+          "Landlord contents option for furnished rentals",
+          "Discounted rates when combined with motor cover"
+        ]
+      },
+      {
+        "insurer": "APA Insurance",
+        "plan": "Home and Contents",
+        "premiumFrom": 2150,
+        "premiumTo": 6100,
+        "cycle": "month",
+        "coverageLimit": "Buildings KES 8,000,000, contents KES 1,500,000, personal accident for the family KES 500,000",
+        "excess": "KES 12,500 on each claim",
+        "benefits": [
+          "Family personal accident benefit included",
+          "Subsidence and landslip extension available",
+          "Fast contents settlement within 14 days of agreement"
+        ]
+      },
+      {
+        "insurer": "Heritage Insurance",
+        "plan": "Homeowner and Householder",
+        "premiumFrom": 2050,
+        "premiumTo": 6000,
+        "cycle": "month",
+        "coverageLimit": "Buildings KES 8,000,000, contents KES 1,500,000, jewellery all risks KES 200,000",
+        "excess": "KES 10,000 on each claim",
+        "benefits": [
+          "Gated community and apartment block schemes with negotiated rates",
+          "Documented reinstatement value calculation at each renewal",
+          "Loss adjuster assigned within 48 hours of notification"
+        ]
+      }
+    ],
+    "business-insurance": [
+      {
+        "insurer": "CIC Insurance Group",
+        "plan": "SME Package Fire, Burglary and Liability",
+        "premiumFrom": 8200,
+        "premiumTo": 26000,
+        "cycle": "month",
+        "coverageLimit": "Stock and contents KES 6,000,000, public liability KES 20,000,000, WIBA for 12 employees",
+        "excess": "KES 25,000 on property claims",
+        "benefits": [
+          "Single package policy, one renewal date",
+          "WIBA certificates issued for tender submissions",
+          "Business interruption to KES 2,000,000 gross profit"
+        ],
+        "highlight": true
+      },
+      {
+        "insurer": "Jubilee Insurance",
+        "plan": "Business Guard",
+        "premiumFrom": 9500,
+        "premiumTo": 30000,
+        "cycle": "month",
+        "coverageLimit": "Property KES 10,000,000, public liability KES 25,000,000, fidelity guarantee KES 1,000,000",
+        "excess": "KES 25,000 on property claims, KES 50,000 on liability",
+        "benefits": [
+          "Fidelity guarantee against employee dishonesty",
+          "Directors and officers liability available as an extension",
+          "Dedicated claims relationship manager"
+        ]
+      },
+      {
+        "insurer": "Britam General Insurance",
+        "plan": "Corporate Property and Liability",
+        "premiumFrom": 9300,
+        "premiumTo": 28500,
+        "cycle": "month",
+        "coverageLimit": "Property KES 10,000,000, public liability KES 20,000,000, goods in transit KES 3,000,000",
+        "excess": "KES 25,000 on each property claim",
+        "benefits": [
+          "Marine cargo and goods in transit on one policy",
+          "Money insurance for cash in transit and on premises",
+          "Machinery breakdown for manufacturers"
+        ]
+      },
+      {
+        "insurer": "UAP Old Mutual Insurance",
+        "plan": "Business Compact",
+        "premiumFrom": 8800,
+        "premiumTo": 27500,
+        "cycle": "month",
+        "coverageLimit": "Property KES 7,500,000, public liability KES 20,000,000, employer's liability KES 10,000,000",
+        "excess": "KES 20,000 on property claims",
+        "benefits": [
+          "Employer's liability and WIBA combined",
+          "Cyber liability extension for data breach costs",
+          "Premium payment in quarterly instalments"
+        ]
+      },
+      {
+        "insurer": "Takaful Insurance of Africa",
+        "plan": "Business Takaful",
+        "premiumFrom": 8500,
+        "premiumTo": 26500,
+        "cycle": "month",
+        "coverageLimit": "Property KES 7,000,000, public liability KES 20,000,000, surplus sharing with participants",
+        "excess": "KES 25,000 on property claims",
+        "benefits": [
+          "Sharia compliant structure for Muslim owned businesses",
+          "Surplus returned to participants where no claims arise",
+          "Cover for stock and premises in one certificate"
+        ]
+      }
+    ],
+    "travel-insurance": [
+      {
+        "insurer": "Jubilee Insurance",
+        "plan": "Travel Guard Schengen",
+        "premiumFrom": 1400,
+        "premiumTo": 4600,
+        "cycle": "trip",
+        "coverageLimit": "Medical and repatriation EUR 30,000 and above, baggage KES 150,000",
+        "excess": "EUR 50 on each medical claim, excess waived on emergency evacuation",
+        "benefits": [
+          "Certificate accepted for Schengen visa applications",
+          "24 hour emergency assistance line",
+          "Trip cancellation up to the value of the ticket"
+        ],
+        "highlight": true
+      },
+      {
+        "insurer": "Britam General Insurance",
+        "plan": "Safari Travel Cover",
+        "premiumFrom": 1300,
+        "premiumTo": 4300,
+        "cycle": "trip",
+        "coverageLimit": "Medical and repatriation EUR 30,000, personal accident KES 1,000,000",
+        "excess": "EUR 50 on medical claims",
+        "benefits": [
+          "Annual multi trip option for business travellers",
+          "Student cover for a full academic year",
+          "Adventure sports extension on request"
+        ]
+      },
+      {
+        "insurer": "CIC Insurance Group",
+        "plan": "Travel Cover Worldwide",
+        "premiumFrom": 1200,
+        "premiumTo": 4100,
+        "cycle": "trip",
+        "coverageLimit": "Medical and repatriation EUR 30,000, baggage KES 120,000, passport loss KES 30,000",
+        "excess": "EUR 75 on medical claims",
+        "benefits": [
+          "Lowest entry premium for short regional trips",
+          "Cover for travel within East Africa including evacuation",
+          "Family and group discounts"
+        ]
+      },
+      {
+        "insurer": "APA Insurance",
+        "plan": "Travel Shield",
+        "premiumFrom": 1350,
+        "premiumTo": 4500,
+        "cycle": "trip",
+        "coverageLimit": "Medical and repatriation EUR 50,000, baggage KES 150,000, personal liability KES 3,000,000",
+        "excess": "EUR 50 on medical claims",
+        "benefits": [
+          "Higher medical limit for travel to the United States and Canada",
+          "Missed connection and travel delay benefits",
+          "Hijack and kidnap cover on selected plans"
+        ]
+      },
+      {
+        "insurer": "UAP Old Mutual Insurance",
+        "plan": "Global Travel",
+        "premiumFrom": 1450,
+        "premiumTo": 4700,
+        "cycle": "trip",
+        "coverageLimit": "Medical and repatriation EUR 60,000, baggage KES 150,000, trip curtailment",
+        "excess": "Zero excess on emergency evacuation",
+        "benefits": [
+          "Inbound cover for visitors to Kenya including safari evacuation",
+          "Pre-existing condition review where declared",
+          "Emergency assistance arranged directly with foreign hospitals"
+        ]
+      }
+    ]
+  }
+}
