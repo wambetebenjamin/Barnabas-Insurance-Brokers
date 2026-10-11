@@ -40,7 +40,7 @@ Locked, exactly as specified:
 | Package | Version |
 | --- | --- |
 | Node | 24.3.0 (`.nvmrc`, `engines.node >= 24.0.0`) |
-| next | 15.3.3 |
+| next | 15.5.27 |
 | react / react-dom | 19.1.0 |
 | next-auth | 5.0.0-beta.29 (Auth.js, email one-time code provider) |
 | @vercel/kv | 3.0.0 |
@@ -299,8 +299,13 @@ Checked by reading the rendered markup and the stylesheet at the four breakpoint
    environment variables and default to clearly labelled placeholders. See `INVENTORY.md` section 14.
 2. **Run `npm run fetch-pexels`** from a machine that can reach `api.pexels.com`, so every slot in
    `src/data/images.ts` stops falling back to the template photographs. See `image-credits.md`.
-3. **Upgrade `next` 15.3.3** when a patched 15.x is available: the pinned version carries advisory
-   CVE-2025-66478. The lock is deliberate, per the brief, so the upgrade should be a reviewed change.
+3. **Review `next-auth` 5.0.0-beta.29 and `nodemailer` 6.10.1** together. `npm audit` still reports
+   two critical Auth.js issues (an existence check that can fail open, and a homoglyph `@` email
+   bypass) plus a set of nodemailer advisories. The fixes are coupled: `next-auth@5.0.0-beta.32`
+   declares `peerOptional nodemailer@^7.0.7 || ^8.0.5`, so both have to move at once, and only
+   `nodemailer@10.1.0` clears every advisory — which that peer range rejects without
+   `--legacy-peer-deps`. See `INVENTORY.md` section 11. `next` itself was upgraded from 15.3.3 to
+   15.5.27 (CVE-2025-66478) and is clean.
 4. **Set `PORTAL_DEMO_MODE` to off in production**, so sample schedules and on-screen one-time codes
    are never shown to a real client.
 5. **Add the reCAPTCHA v2 site key**, otherwise a low scoring submission is refused rather than
