@@ -19,7 +19,7 @@
     "@vercel/blob": "2.8.1",
     "@vercel/kv": "3.0.0",
     "gray-matter": "4.0.3",
-    "next": "15.3.3",
+    "next": "15.5.27",
     "next-auth": "5.0.0-beta.29",
     "next-mdx-remote": "6.0.0",
     "nodemailer": "6.10.1",
@@ -28,13 +28,16 @@
     "remark-gfm": "^4.0.1",
     "zod": "4.6.6"
   },
+  "overrides": {
+    "postcss": "^8.5.29"
+  },
   "devDependencies": {
     "@types/node": "22.15.29",
     "@types/nodemailer": "7.0.2",
     "@types/react": "19.1.6",
     "@types/react-dom": "19.1.5",
     "eslint": "^8.57.1",
-    "eslint-config-next": "^15.3.3",
+    "eslint-config-next": "^15.5.27",
     "typescript": "5.8.3"
   }
 }

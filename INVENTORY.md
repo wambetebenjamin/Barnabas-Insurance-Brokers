@@ -335,13 +335,27 @@ read only through `src/lib/env.ts`, and never exposed to the browser unless pref
 
 ## 11. Stack, verbatim from the brief, as installed
 
-`next 15.3.3`, `react 19.1.0`, `react-dom 19.1.0`, `next-auth 5.0.0-beta.29`, `@vercel/kv 3.0.0`,
+`next 15.5.27`, `react 19.1.0`, `react-dom 19.1.0`, `next-auth 5.0.0-beta.29`, `@vercel/kv 3.0.0`,
 `@vercel/blob 2.8.1`, `nodemailer 6.10.1`, `zod 4.6.6`, `gray-matter 4.0.3`,
 `next-mdx-remote 6.0.0`, `typescript 5.8.3`. `.nvmrc` → `24.3.0`; `engines.node` → `>=24.0.0`.
 `nodemailer` is pinned to the 6.x line because `next-auth@5.0.0-beta.29` declares
 `peerOptional nodemailer@^6.6.5`; 10.x cannot be installed alongside it without `--force`, which would
-break the lockfile. Note for the record: npm flags `next@15.3.3` with advisory CVE-2025-66478 — the
-brief locks this version, so it is kept, and the upgrade is recorded in `README.md` as follow-up work.
+break the lockfile.
+
+**Change from the brief, October 2026.** `next` moved from the briefed `15.3.3` to `15.5.27`, and
+`eslint-config-next` to `^15.5.27`. `npm` deprecates `next@15.3.3` with advisory CVE-2025-66478 and
+Vercel refuses to finish a build without the warning "Vulnerable version of Next.js detected, please
+update immediately", so the briefed pin could not stay. `15.5.27` is the newest patched release on the
+15.x line: it clears every advisory the audit raises against `next` (the two unauthenticated RCEs, the
+middleware/proxy bypass follow-ups, the SSRF in rewrites, the request-smuggling and cache-poisoning
+issues). Nothing else moved — React stays at 19.1.0, the App Router APIs used here are unchanged, and
+`npm run typecheck`, `npm run lint` and `npm run build` are all clean.
+
+One `overrides` entry was added: `postcss` → `^8.5.29`. `next@15.5.27` depends on `postcss@8.4.31`,
+which is inside the range for four postcss advisories (attacker-controlled `sourceMappingURL` file
+reads and unescaped `</style>` in stringify output). 8.5.29 is a minor bump on the same major and the
+build is unaffected; the override exists only so the audit stops attributing those to `next`. The
+exposure is theoretical here anyway — the CSS in this project is authored, not user supplied.
 
 ---
 
