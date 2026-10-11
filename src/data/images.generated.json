@@ -1,0 +1,13 @@
+{
+  "_comment": "Written by scripts/fetch-pexels.mjs. A null value means the slot still falls back to the design source photograph and MUST be replaced with a Pexels photo before launch. See image-credits.md.",
+  "heroFamily": null,
+  "eastAfricanCoupleHealth": null,
+  "kenyanProfessionalAgent": null,
+  "africanBusinessmanBroker": null,
+  "eastAfricanCarOwner": null,
+  "africanHomeowner": null,
+  "kenyanFamilyMedical": null,
+  "eastAfricanOfficeMeeting": null,
+  "africanWomanSigning": null,
+  "nairobiBusinessOffice": null
+}

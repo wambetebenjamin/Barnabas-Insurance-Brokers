@@ -1,0 +1,40 @@
+{
+  "name": "barnabas-insurance-brokers",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Barnabas Insurance Brokers - IRA Kenya licensed insurance brokerage website. Built on the Insure v1.0.0 design source (HTML Codex).",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "inventory": "node scripts/extract-inventory.mjs",
+    "fetch-pexels": "node scripts/fetch-pexels.mjs"
+  },
+  "dependencies": {
+    "@vercel/blob": "2.8.1",
+    "@vercel/kv": "3.0.0",
+    "gray-matter": "4.0.3",
+    "next": "15.3.3",
+    "next-auth": "5.0.0-beta.29",
+    "next-mdx-remote": "6.0.0",
+    "nodemailer": "6.10.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remark-gfm": "^4.0.1",
+    "zod": "4.6.6"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.29",
+    "@types/nodemailer": "7.0.2",
+    "@types/react": "19.1.6",
+    "@types/react-dom": "19.1.5",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.3.3",
+    "typescript": "5.8.3"
+  }
+}
